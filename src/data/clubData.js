@@ -23,7 +23,7 @@ export const MEMBERS = [
       { name: "Dhanvanthini Balaji", role: "President" },
       { name: "Arjuun Bharath", role: "Vice President" },
       { name: "Kanishk M", role: "General Secretary" },
-      { name: "Adithya R", role: "Events Lead" },
+      { name: "Adithya", role: "Events Lead" },
       { name: "Anvi Wadhwa", role: "Curation Lead" },
       { name: "Sandhya", role: "Design Lead" },
       { name: "Jane Bernice", role: "Design Lead" },
