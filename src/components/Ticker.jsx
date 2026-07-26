@@ -18,8 +18,7 @@ export default function Ticker() {
     <div className="ticker-wrap">
       <div className="ticker-inner">
         {doubled.map((item, i) => (
-          <span key={i} className="ticker-item">
-            {item.accent && <span>💡 </span>}
+          <span key={i} className={`ticker-item ${item.accent ? 'ticker-item-accent' : ''}`}>
             {item.label}
           </span>
         ))}

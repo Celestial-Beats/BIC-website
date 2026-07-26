@@ -144,6 +144,7 @@ body {
   font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
   text-transform: uppercase; color: var(--txt-3); padding: 0 44px; white-space: nowrap;
 }
+.ticker-item-accent { color: var(--amber); }
 @keyframes tickerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* ── HERO ────────────────────────────────────────────────── */
@@ -266,6 +267,7 @@ body {
   position: absolute; top: 24px; right: 24px;
   font-size: 20px; opacity: 0.18;
 }
+.stat-icon svg { width: 22px; height: 22px; display: block; }
 
 @media (max-width: 768px) {
   .stats-banner { grid-template-columns: 1fr; }
@@ -485,7 +487,8 @@ body {
 }
 @keyframes slideUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
 .modal-close {
-  float: right; font-family: var(--mono); font-size: 11px; color: var(--txt-2);
+  float: right; display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--mono); font-size: 11px; color: var(--txt-2);
   background: none; border: 1px solid var(--border); border-radius: 6px;
   padding: 4px 10px; cursor: pointer; transition: all 0.2s; letter-spacing: 0.06em;
 }

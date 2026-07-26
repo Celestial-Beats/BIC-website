@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { DEFY_NEXT, DEFY_EDITIONS } from '../data/clubData';
+import { DEFY_NEXT, DEFY_EDITIONS, VOID_EVENT } from '../data/clubData';
+import { IconBolt, IconTrophy, IconTarget } from './Icons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,19 +39,19 @@ export default function Defy() {
       {/* Stats Banner */}
       <div className="stats-banner reveal-up">
         <div className="stat-block featured">
-          <span className="stat-icon">⚡</span>
+          <span className="stat-icon"><IconBolt /></span>
           <div className="stat-number">24<sup>h</sup></div>
           <div className="stat-label">Build Sprint</div>
           <div className="stat-desc">Uninterrupted building at VIT Chennai campus. No sleep, just momentum.</div>
         </div>
         <div className="stat-block">
-          <span className="stat-icon">🏅</span>
+          <span className="stat-icon"><IconTrophy /></span>
           <div className="stat-number">₹40<sup>k</sup></div>
           <div className="stat-label">Per Track Prize</div>
           <div className="stat-desc">₹25k for 1st, ₹15k for 2nd — plus sponsor bounties stacked on top.</div>
         </div>
         <div className="stat-block">
-          <span className="stat-icon">🎯</span>
+          <span className="stat-icon"><IconTarget /></span>
           <div className="stat-number">9</div>
           <div className="stat-label">Finalist Teams</div>
           <div className="stat-desc">Only the top 9 teams pitch to judges in the finale. Every year.</div>
@@ -76,6 +77,30 @@ export default function Defy() {
             style={{ marginTop: 20, display: 'inline-block' }}
           >
             {DEFY_NEXT.link.text}
+          </a>
+        </div>
+      </div>
+
+      {/* VOID — a separate hackathon run with OSPC, not a DeFy edition */}
+      <div className="wide-card reveal-up" style={{ marginBottom: 24 }}>
+        <div className="wide-card-left">
+          <div className="section-tag">↯ {VOID_EVENT.label}</div>
+          <div className="defy-hero-num">{VOID_EVENT.title}</div>
+          <div className="edition-when" style={{ marginTop: 8 }}>{VOID_EVENT.when}</div>
+          <p style={{ color: 'var(--txt-2)', fontSize: 16, lineHeight: 1.65, maxWidth: '60ch', marginTop: 16 }}>
+            {VOID_EVENT.blurb}
+          </p>
+          <div className="chips" style={{ marginTop: 20 }}>
+            {VOID_EVENT.chips.map((c, i) => <span key={i} className="chip">{c}</span>)}
+          </div>
+          <a
+            className="inline-link"
+            href={VOID_EVENT.link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginTop: 20, display: 'inline-block' }}
+          >
+            {VOID_EVENT.link.text}
           </a>
         </div>
       </div>

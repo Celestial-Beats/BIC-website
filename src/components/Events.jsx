@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { EVENTS, DEFY_EDITIONS } from '../data/clubData';
+import { IconRocket, IconBolt, IconTicket, IconHammer, IconMic } from './Icons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,19 +38,19 @@ export default function Events() {
       {/* Stats Banner — figures derived from the editions and lineup listed on this site */}
       <div className="stats-banner reveal-up">
         <div className="stat-block featured">
-          <span className="stat-icon">🚀</span>
+          <span className="stat-icon"><IconRocket /></span>
           <div className="stat-number">{DEFY_EDITIONS.length}</div>
           <div className="stat-label">DeFy Editions</div>
           <div className="stat-desc">Three years of BiC's flagship Web3 × entrepreneurship hackathon.</div>
         </div>
         <div className="stat-block">
-          <span className="stat-icon">⚡</span>
+          <span className="stat-icon"><IconBolt /></span>
           <div className="stat-number">24<sup>h</sup></div>
           <div className="stat-label">Build Sprint</div>
           <div className="stat-desc">The onsite round at DeFy runs a full 24 hours, start to finish.</div>
         </div>
         <div className="stat-block">
-          <span className="stat-icon">🎪</span>
+          <span className="stat-icon"><IconTicket /></span>
           <div className="stat-number">{EVENTS.technovit.length}</div>
           <div className="stat-label">TechnoVIT '26 Events</div>
           <div className="stat-desc">Flagship entries in this year's TechnoVIT lineup.</div>
@@ -76,38 +77,18 @@ export default function Events() {
       {/* What to Expect — Feature Cards */}
       <div className="feature-grid feature-grid-3 reveal-up" style={{ marginBottom: 80 }}>
         {[
-          { tag: 'Hackathon', icon: '⚒️', title: 'DeFy', body: "Our flagship. An online ideation round, then a 24-hour onsite build and a top-nine pitch finale." },
-          { tag: 'Fest', icon: '🎪', title: 'TechnoVIT', body: "BiC runs its own events inside VIT Chennai's annual tech fest — led by the core team." },
-          { tag: 'Pitch', icon: '🎤', title: 'Pitch Competitions', body: 'Put your idea in front of real judges. Build the deck, practice the delivery, handle the hard questions.' },
+          { tag: 'Hackathon', icon: IconHammer, title: 'DeFy', body: "Our flagship. An online ideation round, then a 24-hour onsite build and a top-nine pitch finale." },
+          { tag: 'Fest', icon: IconTicket, title: 'TechnoVIT', body: "BiC runs its own events inside VIT Chennai's annual tech fest — led by the core team." },
+          { tag: 'Pitch', icon: IconMic, title: 'Pitch Competitions', body: 'Put your idea in front of real judges. Build the deck, practice the delivery, handle the hard questions.' },
         ].map((d, i) => (
           <div key={i} className={`feature-card ${i === 0 ? 'dark-amber' : ''} reveal-up`}>
-            <div style={{ fontSize: 28, marginBottom: 14 }}>{d.icon}</div>
+            <d.icon style={{ width: 28, height: 28, marginBottom: 14 }} />
             <div className="fc-eyebrow">{d.tag}</div>
             <div className="fc-title">{d.title}</div>
             <div className="fc-body">{d.body}</div>
           </div>
         ))}
       </div>
-
-      {/* General Events */}
-      {EVENTS.general.length > 0 && (
-        <>
-          <h2 className="page-hero-title reveal-up" style={{ fontSize: 'clamp(28px,3.5vw,44px)', marginBottom: 24 }}>
-            Club <em>Initiatives</em>
-          </h2>
-          <div className="number-list reveal-up">
-            {EVENTS.general.map((ev, i) => (
-              <div key={i} className="number-item">
-                <span className="number-item-num">0{i + 1}</span>
-                <div className="number-item-body">
-                  <div className="number-item-title">{ev.title}</div>
-                  <div className="number-item-sub">{ev.blurb}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </>
-      )}
     </section>
   );
 }

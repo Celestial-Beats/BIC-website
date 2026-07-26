@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="footer-lead">
           <span className="footer-eyebrow">Get in touch</span>
           <span className="footer-brand">BiC — VIT Chennai</span>
-          <span className="footer-tagline">Business Innovation Community · EST. 2024</span>
+          <span className="footer-tagline">Business Innovation Community · EST. 2023</span>
         </div>
         <div className="footer-socials">
           {SOCIALS.map((s) => (

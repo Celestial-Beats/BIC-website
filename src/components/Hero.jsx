@@ -185,7 +185,7 @@ export default function Hero({ onNavigate }) {
         <canvas className="hero-canvas" ref={canvasRef} />
       </div>
       <div className="hero-content">
-        <p className="hero-eyebrow">VIT Chennai · EST. 2024</p>
+        <p className="hero-eyebrow">VIT Chennai · EST. 2023</p>
         <h1 className="hero-title">BiC</h1>
         <p className="hero-subtitle">Business Innovation Community</p>
         <div className="hero-cta">

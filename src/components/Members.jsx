@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MEMBERS } from '../data/clubData';
+import { IconBulb, IconUsers, IconGrid } from './Icons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,19 +54,19 @@ export default function Members() {
       {/* Stats Banner — Finguard style */}
       <div className="stats-banner reveal-up">
         <div className="stat-block featured">
-          <span className="stat-icon">💡</span>
-          <div className="stat-number">3<sup>rd</sup></div>
+          <span className="stat-icon"><IconBulb /></span>
+          <div className="stat-number">4<sup>th</sup></div>
           <div className="stat-label">Year Running</div>
-          <div className="stat-desc">BiC has been building the innovation culture at VIT Chennai since 2024.</div>
+          <div className="stat-desc">BiC has been building the innovation culture at VIT Chennai since 2023.</div>
         </div>
         <div className="stat-block">
-          <span className="stat-icon">👥</span>
+          <span className="stat-icon"><IconUsers /></span>
           <div className="stat-number">{CURRENT.length}</div>
           <div className="stat-label">Core Team 2026–27</div>
           <div className="stat-desc">The leads running BiC this year, listed below.</div>
         </div>
         <div className="stat-block">
-          <span className="stat-icon">🏆</span>
+          <span className="stat-icon"><IconGrid /></span>
           <div className="stat-number">{DEPARTMENTS.length}</div>
           <div className="stat-label">Departments</div>
           <div className="stat-desc">{DEPARTMENTS.join(' · ')}.</div>
@@ -103,6 +104,8 @@ export default function Members() {
             { tag: 'Software', title: 'Build & Ship', body: 'Build projects, maintain the club website, and develop tools that make BiC run better.' },
             { tag: 'Design', title: 'Visual Identity', body: 'Own the look of BiC — from social assets to event branding. If it looks good, they made it.' },
             { tag: 'Events', title: 'Make it Happen', body: 'Coordinate DeFy, TechnoVIT and every BiC event from logistics to execution.' },
+            { tag: 'Curation', title: 'Case Studies & Content', body: 'Curate case studies for Instagram — reels, carousels and the digital-marketing push behind them.' },
+            { tag: 'R&D', title: 'Research & Deep Dives', body: 'Runs "Know Your Entrepreneur," our founder-profile series, plus long-form blogs on startups, markets and business strategy.' },
           ].map((d, i) => (
             <div key={i} className="feature-card reveal-up">
               <div className="fc-eyebrow">{d.tag}</div>

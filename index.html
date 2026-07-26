@@ -7,7 +7,9 @@
     <meta name="description" content="BiC is VIT Chennai's Business Innovation Community — home of the DeFy hackathon, TechnoVIT events, and the campus's builders and future founders." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
   <body>
     <script>
@@ -26,7 +28,7 @@
         div.style.fontFamily = 'monospace';
         div.style.fontSize = '14px';
         div.style.overflow = 'auto';
-        div.innerHTML = '<h2>🔴 JavaScript Runtime Error:</h2>' +
+        div.innerHTML = '<h2>JavaScript Runtime Error:</h2>' +
           '<p><b>Message:</b> ' + message + '</p>' +
           '<p><b>Source:</b> ' + source + ' (Line ' + lineno + ', Col ' + colno + ')</p>' +
           (error && error.stack ? '<pre><b>Stack:</b> ' + error.stack + '</pre>' : '');
@@ -43,7 +45,7 @@
         div.style.fontFamily = 'monospace';
         div.style.fontSize = '14px';
         div.style.overflow = 'auto';
-        div.innerHTML = '<h2>🔴 Unhandled Promise Rejection:</h2>' +
+        div.innerHTML = '<h2>Unhandled Promise Rejection:</h2>' +
           '<p><b>Reason:</b> ' + event.reason + '</p>' +
           (event.reason && event.reason.stack ? '<pre><b>Stack:</b> ' + event.reason.stack + '</pre>' : '');
         document.body.appendChild(div);

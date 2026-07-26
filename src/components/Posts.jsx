@@ -114,7 +114,10 @@ export default function Posts() {
       {open !== null && POSTS[open] && (
         <div className="post-modal-overlay" onClick={() => setOpen(null)}>
           <div className="post-modal" onClick={e => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setOpen(null)}>✕ Close</button>
+            <button className="modal-close" onClick={() => setOpen(null)}>
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
+              Close
+            </button>
             <div className="modal-tag">{POSTS[open].tag}</div>
             <h2 className="modal-title">{POSTS[open].title}</h2>
             <div className="modal-meta">{POSTS[open].min}</div>
