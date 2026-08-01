@@ -9,9 +9,9 @@ export const MEMBERS = [
     people: [
       { name: "Anvi Wadhwa", role: "President" },
       { name: "Srivats", role: "Vice President" },
-      { name: "Daksh Sablok", role: "Software Lead" },
       { name: "Daksh Sablok", role: "General Secretary" },
       { name: "Sharan Gopinath Bailur", role: "Events Lead" },
+      { name: "S J Advaith", role: "Software Lead" },
       { name: "S N Adithya Srivatsan", role: "R&D Lead" },
       { name: "Ardhra Arunkumar", role: "Curation Lead" },
       { name: "Sri Hasini Chowdhary", role: "Design Lead" },

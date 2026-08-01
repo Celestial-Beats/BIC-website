@@ -98,7 +98,7 @@ export default function Posts() {
                 href={INSTAGRAM.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: 'var(--violet)', textDecoration: 'none' }}
+                style={{ color: 'var(--violet)', textDecoration: 'none', borderBottom: '1px solid rgba(139,92,246,0.4)', paddingBottom: 1, cursor: 'pointer' }}
               >
                 @bic_vitc
               </a>

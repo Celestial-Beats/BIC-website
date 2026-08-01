@@ -68,7 +68,7 @@ export default function Events() {
               {ev.chips.map((c, j) => <span key={j} className="event-chip">{c}</span>)}
             </div>
             <div className="event-title">{ev.title}</div>
-            <div className="event-lead">Lead: {ev.lead}</div>
+            <div className="event-lead">Student Coordinator: {ev.lead}</div>
             <p className="event-blurb">{ev.blurb}</p>
           </div>
         ))}
@@ -78,8 +78,8 @@ export default function Events() {
       <div className="feature-grid feature-grid-3 reveal-up" style={{ marginBottom: 80 }}>
         {[
           { tag: 'Hackathon', icon: IconHammer, title: 'DeFy', body: "Our flagship. An online ideation round, then a 24-hour onsite build and a top-nine pitch finale." },
-          { tag: 'Fest', icon: IconTicket, title: 'TechnoVIT', body: "BiC runs its own events inside VIT Chennai's annual tech fest — led by the core team." },
-          { tag: 'Pitch', icon: IconMic, title: 'Pitch Competitions', body: 'Put your idea in front of real judges. Build the deck, practice the delivery, handle the hard questions.' },
+          { tag: 'Event', icon: IconTicket, title: 'Clash Royale', body: 'Build your deck. Master your strategy, outplay your opponents, and claim victory in the arena.' },
+          { tag: 'Pitch', icon: IconMic, title: 'Ridiculous Pitches', body: 'Put your ideas to the test. Build the pitch, refine your vision, and take on the challenge of innovation.' },
         ].map((d, i) => (
           <div key={i} className={`feature-card ${i === 0 ? 'dark-amber' : ''} reveal-up`}>
             <d.icon style={{ width: 28, height: 28, marginBottom: 14 }} />
