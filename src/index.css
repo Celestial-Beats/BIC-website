@@ -305,6 +305,7 @@ body {
   inset: 0; border-radius: inherit;
   background: radial-gradient(circle at top left, rgba(245,166,35,0.04), transparent 55%);
   opacity: 0; transition: opacity 0.3s;
+  pointer-events: none;
 }
 .feature-card:hover::before { opacity: 1; }
 
