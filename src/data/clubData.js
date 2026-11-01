@@ -12,7 +12,7 @@ export const MEMBERS = [
       { name: "Daksh Sablok", role: "General Secretary" },
       { name: "Sharan Gopinath Bailur", role: "Events Lead" },
       { name: "S J Advaith", role: "Software Lead" },
-      { name: "Cedric", role: "R&D Lead" },
+      { name: "Cedric Antony Joseph", role: "R&D Lead" },
       { name: "Ardhra Arunkumar", role: "Curation Lead" },
       { name: "Sri Hasini Chowdhary", role: "Design Lead" },
     ]
