@@ -12,7 +12,7 @@ export const MEMBERS = [
       { name: "Daksh Sablok", role: "General Secretary" },
       { name: "Sharan Gopinath Bailur", role: "Events Lead" },
       { name: "S J Advaith", role: "Software Lead" },
-      { name: "S N Adithya Srivatsan", role: "R&D Lead" },
+      { name: "Cedric", role: "R&D Lead" },
       { name: "Ardhra Arunkumar", role: "Curation Lead" },
       { name: "Sri Hasini Chowdhary", role: "Design Lead" },
     ]
@@ -23,7 +23,7 @@ export const MEMBERS = [
       { name: "Dhanvanthini Balaji", role: "President" },
       { name: "Arjuun Bharath", role: "Vice President" },
       { name: "Kanishk M", role: "General Secretary" },
-      { name: "Cedric", role: "Events Lead" },
+      { name: "Adithya", role: "Events Lead" },
       { name: "Anvi Wadhwa", role: "Curation Lead" },
       { name: "Sandhya", role: "Design Lead" },
       { name: "Jane Bernice", role: "Design Lead" },
